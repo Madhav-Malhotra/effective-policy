@@ -1,12 +1,40 @@
-/* ==== INDEX ==== */
+/* ==== GENERAL ==== */
+
+p, li, a, span {
+    font-size: 17px;
+}
+
+h1, h2 {
+    color: #FFCE1A;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+}
 
 body {
     background-color: #0e0e0e;
     color: white;
 }
 
-h1, h2 {
-    color: #FFCE1A;
+section .container-fluid {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* ==== SECTIONS ==== */
+
+section#splash {
+    background: linear-gradient(135deg, #000, #070707, #0e0e0e);
+}
+
+#splash .container-fluid h1 {
+    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+    font-size: 8em;
 }
 
 #splash .container-fluid {
@@ -15,27 +43,12 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(-45deg, #000, #070707, #0e0e0e);
+    background: linear-gradient(180deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
 	/*background-size: 100% 100%;
 	animation: gradient 20s ease infinite;*/
 }
 
-#splash .container-fluid h1 {
-    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
-    font-size: 8em;
-}
-
-a.navbar-brand.custom-brand {
-    color: #FFCE1A;
-    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
-    margin-left: 1em;
-}
-
-nav.navbar .navbar-collapse ul.navbar-nav li.nav-item a {
-    color: white;
-}
-
-@keyframes gradient {
+/*@keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -45,4 +58,28 @@ nav.navbar .navbar-collapse ul.navbar-nav li.nav-item a {
 	100% {
 		background-position: 0% 50%;
 	}
+}*/
+
+section#about {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    /* Unsure if this gradient looks good.
+    background: linear-gradient(180deg, transparent, transparent, transparent, transparent, black);
+    */
+}
+
+#about .container-fluid h1 {
+    margin-bottom: 1em;
+}
+
+/* ==== NAVBAR ==== */
+
+a.navbar-brand.custom-brand {
+    color: #FFCE1A;
+    font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+    margin-left: 1em;
+}
+
+nav.navbar .navbar-collapse ul.navbar-nav li.nav-item a {
+    color: white;
 }
