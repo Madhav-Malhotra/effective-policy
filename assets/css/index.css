@@ -11,6 +11,7 @@ h1, h2 {
 h1 {
     font-size: 3em;
     margin-bottom: 1em;
+    border-bottom: rgb(222, 226, 230) solid 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,8 +24,8 @@ body {
 }
 
 section .container-fluid {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .btn.btn-accent-custom {
@@ -47,6 +48,8 @@ section#splash {
 #splash .container-fluid h1 {
     font-family: 'EB Garamond', 'Times New Roman', Times, serif;
     font-size: 8em;
+    border-bottom: none;
+    margin-bottom: 0.25em;
 }
 
 #splash .container-fluid {
@@ -59,17 +62,17 @@ section#splash {
 }
 
 section#about {
-    padding-top: 7em;
-    padding-bottom: 7em;
+    padding-top: 5em;
+    padding-bottom: 8em;
 }
 
 section#team {
     background: linear-gradient(-45deg, #000, #070707, #0e0e0e);
 }
 
-#team>.par.container-fluid {
+#team>.container-fluid {
     padding-top: 1em;
-    padding-bottom: 7em;
+    padding-bottom: 5em;
     background: linear-gradient(0deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
 }
 
@@ -101,6 +104,7 @@ div#person-grid {
     text-align: center;
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 2em;
 }
 .person-item img {
     margin-bottom: 12px;
