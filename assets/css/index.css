@@ -23,7 +23,7 @@ body {
     color: white;
 }
 
-section .container-fluid {
+section>.container-fluid {
     padding-left: 4em;
     padding-right: 4em;
 }
@@ -105,9 +105,29 @@ div#person-grid {
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
+    max-width: 275px;
 }
 .person-item img {
     margin-bottom: 12px;
     max-width: 200px;
     border-radius: 100px;
+}
+
+/* ==== WORK ==== */ 
+.card.card-cover h3 {
+    z-index: 10;
+}
+
+.card.card-cover>img {
+    position: absolute;
+    width: 100%;
+}
+
+.card.card-cover {
+    transition: 0.3s;
+}
+
+.card.card-cover:hover {
+    cursor: pointer;
+    filter: brightness(0.7);
 }
