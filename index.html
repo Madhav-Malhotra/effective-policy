@@ -27,10 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#work">Work</a>
+              <a class="nav-link" href="#contributors">Contributors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contributors">Contributors</a>
+              <a class="nav-link active" aria-current="page" href="#work">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://effectivepolitics.substack.com" target="_blank">Blog</a>
@@ -90,10 +90,10 @@
       </div>
     </section>
 
-    <section id="team">
+    <section id="contributors" class="pb-5">
       <div class="container-fluid">
         <h1>Our supporters</h1>
-        <p>Many generous professors have contributed to our work</p>
+        <p>Many generous educators have contributed to our work</p>
         
         <div id="person-grid" class="container-fluid d-flex">
           <div class="person-item">
@@ -124,12 +124,13 @@
       </div>
     </section>
 
-    <section id="work">
-      <div class="container-fluid" id="custom-cards">
+    <section id="work" class="pt-5">
+      <div class="container-fluid pt-5" id="custom-cards">
         <h1 class="pb-2">Research areas</h1>
     
+        <!-- Modal buttons -->
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#healthcare-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <img src="/assets/img/work/healthcare.jpg" alt="Surgical mask" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -138,7 +139,7 @@
             </div>
           </div>
     
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#environment-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <img src="/assets/img/work/environment.jpg" alt="Jellyfish" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -147,7 +148,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#education-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <img src="/assets/img/work/education.jpg" alt="Classroom" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -156,7 +157,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#economics-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <img src="/assets/img/work/economy.jpg" alt="Coins" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -165,20 +166,157 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#law-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-              <img src="/assets/img/work/environment.jpg" alt="Jellyfish" />
+              <img src="/assets/img/work/law.jpg" alt="World map" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Law</h3>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col" data-bs-toggle="modal" data-bs-target="#technology-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
-              <img src="/assets/img/work/environment.jpg" alt="Jellyfish" />
+              <img src="/assets/img/work/technology.jpg" alt="Computer chip" />
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Technology</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal content -->
+          <div class="modal fade" id="healthcare-modal" tabindex="-1" aria-labelledby="health-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="health-modal-label">Healthcare Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Which <accent>physician payment schemes</accent> best incentivise community health?</li>
+                    <li>How can we improve the accessibility of <accent>non-specialist mental health supports</accent>?</li>
+                    <li>How can we fund <accent>community-led efforts for a healthy lifestyle</accent> (exercise, sleep, diet, relationships, etc.)?</li>
+                    <li>Which <accent>pandemic-preparedness investments</accent> are most cost-effective when considering better PPE, advanced sterilisation like far-UVC, and distributed supply chains?</li>
+                    <li>Which recruitment can address gaps in <accent>rural healthcare professionals</accent>?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="environment-modal" tabindex="-1" aria-labelledby="environment-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="environment-modal-label">Environmental Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>How can we <accent>retrain oil and gas workers</accent> to join green industries like carbon capture?</li>
+                    <li>How can economic <accent>incentives for bioprospecting</accent> be coupled with funding for wildlife conservation?</li>
+                    <li>How can green infrastructure (especially sustainable food production) be developed with side effects like lasting jobs or <accent>distributed infrastructure for resilience</accent>?</li>
+                    <li>Which government subsidies should be redirected from established renewable energy technologies to nascent <accent>climate adaptation technologies</accent>?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="education-modal" tabindex="-1" aria-labelledby="education-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="education-modal-label">Education Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>What are effective pilots to scale <accent>portfolio or project-based learning</accent> to replace standardised testing?</li>
+                    <li>Which funding models can <accent>scale accessible childcare</accent>?</li>
+                    <li>How can high school and post-secondary education be made more <accent>flexible and adaptive</accent> in response to rapidly changing technologies and job markets?</li>
+                    <li>How can we scalably help students <accent>test their fit for different careers</accent> and post-secondary training in grade school?</li>
+                    <li>Where can we recognise or supplement <accent>immigrants' educational credentials</accent> to improve career outcomes?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="economics-modal" tabindex="-1" aria-labelledby="economics-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="economics-modal-label">Economics Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>Which systematic incentives inhibit <accent>scalable affordable housing development</accent>? Which failure points are most cost-effective to fix?</li>
+                    <li>How can career transitions be scalably sped up amidst <accent>rapidly increasing automation</accent>?</li>
+                    <li>How can governments help companies create <accent>long-run leadership incentives</accent>? An example includes vesting schedules for stock options.</li>
+                    <li>How can aging workforces and <accent>talent gaps in the skilled trades</accent> be addressed?</li>
+                    <li>How can the government add confidence to <accent>investment funds for developing economies</accent>, especially for social or climate investing?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="law-modal" tabindex="-1" aria-labelledby="law-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="law-modal-label">Legal Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>How can we reduce implicit biases by obscuring <accent>personally identifiable information in courtrooms</accent>?</li>
+                    <li>Which <accent>electoral systems</accent> can reduce political partisanship and lobbying in the long run?</li>
+                    <li>Which options exist for <accent>moderate, feasible antitrust legislation</accent> against oligopolies? Examples include eliminating patent hoarding.</li>
+                    <li>Which forms of <accent>direct citizen participation</accent> cost-effectively increase political participation?</li>
+                    <li>Which <accent>former-felon rehabilitation programs</accent> can better prevent reincarceration?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal fade" id="technology-modal" tabindex="-1" aria-labelledby="technology-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="technology-modal-label">Technological Research Questions</h3>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>How can regulations on <accent>dual-use technologies</accent>, like advanced AI or synthetic biology, balance: local innovation vs. brain drain; regulatory burdens vs. fair liabilities; market adaptation vs. regulatory capture?</li>
+                    <li>How can the government rapidly, scalably, and adaptively reduce <accent>cyber-risks for digital government services</accent>?</li>
+                    <li>Which investments are most cost-effective to improve <accent>critical infrastucture resilience</accent> against economic shocks? How does this change in remote vs. densely-populated areas?</li>
+                    <li>How can social media or news media <accent>publishers scalably prevent misinformation</accent>? Which technologies, funding, or human capital are missing, especially with AI-generated content?</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-accent-custom" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
@@ -189,6 +327,7 @@
 
 
     <!-- Custom scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>

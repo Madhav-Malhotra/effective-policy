@@ -4,7 +4,11 @@ p, li, a, span {
     font-size: 17px;
 }
 
-h1, h2 {
+h1, h2, h3 {
+    color: #FFCE1A;
+}
+
+accent {
     color: #FFCE1A;
 }
 
@@ -66,14 +70,18 @@ section#about {
     padding-bottom: 8em;
 }
 
-section#team {
+section#contributors {
     background: linear-gradient(-45deg, #000, #070707, #0e0e0e);
 }
 
-#team>.container-fluid {
+#contributors>.container-fluid {
     padding-top: 1em;
     padding-bottom: 5em;
     background: linear-gradient(0deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
+}
+
+section#work {
+    background: linear-gradient(-135deg, #000, #070707, #0e0e0e);
 }
 
 /* ==== NAVBAR ==== */
@@ -116,6 +124,7 @@ div#person-grid {
 /* ==== WORK ==== */ 
 .card.card-cover h3 {
     z-index: 10;
+    color: white;
 }
 
 .card.card-cover>img {
