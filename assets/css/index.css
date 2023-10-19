@@ -38,7 +38,7 @@ section>.container-fluid {
     transition: 0.3s
 }
 
-.btn.btn-accent-custom:hover {
+.btn.btn-accent-custom:hover, .btn.btn-accent-custom:focus {
     background-color: #FFCE1A;
     color: black;
 }
@@ -75,13 +75,25 @@ section#contributors {
 }
 
 #contributors>.container-fluid {
-    padding-top: 1em;
-    padding-bottom: 5em;
-    background: linear-gradient(0deg, transparent, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
+    padding-top: 3em;
+    padding-bottom: 7em;
+    background: linear-gradient(0deg, #0e0e0e, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
 }
 
-section#work {
-    background: linear-gradient(-135deg, #000, #070707, #0e0e0e);
+section#work>.container-fluid {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: linear-gradient(0deg, #0e0e0e, transparent, transparent, transparent, transparent, transparent, transparent);
+}
+
+section#contact {
+    background: linear-gradient(-45deg, #000, #070707, #0e0e0e);
+}
+
+section#contact>.container-fluid {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    background: linear-gradient(0deg, #0e0e0e, transparent, transparent, transparent, transparent, transparent, transparent, #0e0e0e);
 }
 
 /* ==== NAVBAR ==== */
@@ -139,4 +151,35 @@ div#person-grid {
 .card.card-cover:hover {
     cursor: pointer;
     filter: brightness(0.7);
+}
+
+/* ===== CONTACT ===== */
+
+div.contact-form input:not([type="submit"]), div.contact-form textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: solid #FFCE1A;
+    margin: 12px 0px;
+}
+
+div.contact-form input::placeholder, div.contact-form textarea::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+  
+div.contact-form input::-ms-input-placeholder, 
+div.contact-form textarea::-ms-input-placeholder { /* Edge 12 -18 */
+    color: white;
+}
+
+div.contact-form input[type="submit"] {
+    width: 100%;
+}
+
+div.contact-form textarea:focus, div.contact-form input:not([type="submit"]):focus {
+    background-color: transparent;
+    color: white;
+    border: solid #FFCE1A;
+    outline-width: 0px;
 }

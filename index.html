@@ -90,7 +90,7 @@
       </div>
     </section>
 
-    <section id="contributors" class="pb-5">
+    <section id="contributors" class="">
       <div class="container-fluid">
         <h1>Our supporters</h1>
         <p>Many generous educators have contributed to our work</p>
@@ -124,12 +124,13 @@
       </div>
     </section>
 
-    <section id="work" class="pt-5">
-      <div class="container-fluid pt-5" id="custom-cards">
+    <section id="work" class="">
+      <div class="container-fluid" id="custom-cards">
         <h1 class="pb-2">Research areas</h1>
     
-        <!-- Modal buttons -->
+        <!-- Modals -->
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+          <!-- Modal buttons -->
           <div class="col" data-bs-toggle="modal" data-bs-target="#healthcare-modal">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
               <img src="/assets/img/work/healthcare.jpg" alt="Surgical mask" />
@@ -320,6 +321,61 @@
               </div>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="">
+      <div class="container-fluid">
+        <h1>Reach out</h1>
+        
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xqkvwrwr" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <i class="fa fa-user-o"></i>
+                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Name*" required="required"
+                    data-error="Name is required.">
+                  <div class="help-block with-errors"></div>
+                  <div data-lastpass-icon-root="true"
+                    style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <i class="fa fa-envelope-o"></i>
+                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Email*" required="required"
+                    data-error="Valid email is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <i class="fa fa-question-circle-o"></i>
+                  <input id="form_subject" type="text" name="subject" class="form-control" placeholder="Subject*"
+                    required="required" data-error="Subject is required.">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <i class="fa fa-comment-o"></i>
+                  <textarea id="form_message" name="message" class="form-control" placeholder="Message*" rows="7"
+                    required="required" data-error="Please leave a message."></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <input class="btn btn-accent-custom" type="submit" value="Send">
+          </form>
+        </div>
 
         </div>
       </div>
