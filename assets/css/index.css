@@ -135,17 +135,27 @@ div#person-grid {
 
 /* ==== WORK ==== */ 
 .card.card-cover h3 {
-    z-index: 10;
+    font-weight: bold;
     color: white;
+    font-size: 2.5em;
 }
 
 .card.card-cover>img {
-    position: absolute;
     width: 100%;
 }
 
 .card.card-cover {
     transition: 0.3s;
+    overflow: hidden;
+    border-radius: 20px;
+    border: none;
+}
+
+.card.card-cover .subtitle {
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    width: 100%;
 }
 
 .card.card-cover:hover {
@@ -182,4 +192,27 @@ div.contact-form textarea:focus, div.contact-form input:not([type="submit"]):foc
     color: white;
     border: solid #FFCE1A;
     outline-width: 0px;
+}
+
+/* ====== MOBILE ======= */ 
+@media only screen and (max-width: 767px) {
+    #splash>.container-fluid>h1 {
+        font-size: 5.5em;
+    }
+
+    ul.navbar-nav {
+        margin-left: 1.1em;
+    }
+
+    nav.navbar div.container-fluid div.cta-button {
+        margin-left: 1.1em;
+    }
+
+    section#about div.row>div {
+        margin-bottom: 4em;
+    }
+
+    section p, section h1, section h2, section h3, section h4, section h5, section h6 {
+        text-align: center;
+    }
 }
