@@ -4,11 +4,7 @@ p, li, a, span {
     font-size: 17px;
 }
 
-h1, h2, h3 {
-    color: #FFCE1A;
-}
-
-a, accent {
+h1, h2, h3, a, accent {
     color: #FFCE1A;
 }
 
