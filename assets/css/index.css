@@ -4,6 +4,10 @@ p, li, a, span {
     font-size: 17px;
 }
 
+p {
+    text-align: center;
+}
+
 h1, h2, h3, a, accent {
     color: #FFCE1A;
 }
@@ -16,6 +20,7 @@ h1 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'EB Garamond', 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 body {
@@ -121,8 +126,9 @@ div#person-grid {
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 2em;
-    max-width: 275px;
+    width: 275px;
 }
+
 .person-item img {
     margin-bottom: 12px;
     max-width: 200px;
@@ -211,4 +217,25 @@ div.contact-form textarea:focus, div.contact-form input:not([type="submit"]):foc
     section p, section h1, section h2, section h3, section h4, section h5, section h6 {
         text-align: center;
     }
+}
+
+/* ======== About ======== */ 
+#about .descriptions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+
+#about .descriptions>.description-item {
+    text-align: center;
+    max-width: 386px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+}
+
+#about img.description-icon {
+    max-width: 100px;
+    margin-bottom: 15px;
 }
