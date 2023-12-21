@@ -181,11 +181,13 @@ div#person-grid {
 /* ===== CONTACT ===== */
 
 div.contact-form input:not([type="submit"]), div.contact-form textarea {
-    background-color: transparent;
+    background-color: #111;
     color: white;
     border: none;
     border-bottom: solid #FFCE1A;
     margin: 12px 0px;
+    text-align: center;
+    padding: 9px;
 }
 
 div.contact-form input::placeholder, div.contact-form textarea::placeholder {
@@ -203,7 +205,7 @@ div.contact-form input[type="submit"] {
 }
 
 div.contact-form textarea:focus, div.contact-form input:not([type="submit"]):focus {
-    background-color: transparent;
+    background-color: #111;
     color: white;
     border: solid #FFCE1A;
     outline-width: 0px;
