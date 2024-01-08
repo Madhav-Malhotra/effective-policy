@@ -125,6 +125,10 @@ nav a.navbar-brand.custom-brand.nav-img img {
     margin-top: -3px;
 }
 
+nav.navbar div.container-fluid div.cta-button  {
+    margin-left: 1em;    
+}
+
 
 /* ==== PERSON GALLERY ==== */ 
 div#person-grid {
