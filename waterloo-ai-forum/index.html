@@ -22,6 +22,15 @@
       section#themes div.card.card-cover {
           cursor: default;
       }
+
+      .debate-theme {
+          border: solid 3px #FFCE1A;
+          border-radius: 15px;
+          margin-right: 1em;
+          max-width: 400px;
+          margin-bottom: 2em;
+          padding: 25px;
+      }
     </style>
 
 </head>
@@ -70,7 +79,7 @@
         <div class="container-fluid" style="flex-direction:column;">
           <h1 style="margin-top:1em;">Waterloo AI Forum</h1>
           <h4>A debate on the future of AI in law, healthcare, politics, and more.</h4>
-          <h4>Saturday, March 9th</h4>
+          <h4>Saturday, March 9th (10 AM - 2:30 PM)</h4>
         </div>                        
     </section>
 
@@ -104,7 +113,7 @@
         </div>
     </section>
 
-    <section id="judges" class="">
+    <section id="judges" class="mb-5">
       <div class="container-fluid">
         <h1>Judges</h1>
         <div id="person-grid" class="container-fluid d-flex">
@@ -141,62 +150,41 @@
       </div>
     </section>
 
-    <section id="themes" class="">
+    <section id="themes" class="mt-5">
       <div class="container-fluid" id="custom-cards">
         <h1 class="pb-2">Themes</h1>
 
-        <p>Unsure what interests you? Reach out or check out 
+        <p style="margin-bottom: 3em;">Unsure what interests you? Reach out or check out 
           <a 
           href="https://docs.google.com/presentation/d/1o6hSObUUnHyAw0s6nTm0EgA6_JbstrCrFNmMv2gGFLk/edit#slide=id.g269aba1a99b_0_34" 
           target="_blank">more detailed topics here</a>.
         </p>
     
         <!-- Modals -->
-        <div class="row row-cols-1 row-cols-lg-3 g-4 py-5">
-          <!-- Modal buttons -->
-          <div class="col" data-bs-toggle="modal" >
-            <div class="card card-cover">
-              <img src="/assets/img/work/healthcare.jpg" alt="Surgical mask" />
-              <div class="subtitle">
-                <h3 class="">Healthcare</h3>
-              </div>
-            </div>
-          </div>
-    
-          <div class="col" data-bs-toggle="modal">
-            <div class="card card-cover">
-              <img src="/assets/img/work/legal.jpg" alt="Blind justice" style="filter: brightness(0.5);" />
-              <div class="subtitle">
-                <h3 class="">Law</h3>
-              </div>
-            </div>
+        <div class="d-flex flex-wrap justify-content-center mb-5">
+          <div class="debate-theme">
+            <h3>Military</h3>
+            <h5>Should the US export object detection software for military drones?</h5>
           </div>
 
-          <div class="col" data-bs-toggle="modal">
-            <div class="card card-cover">
-              <img src="/assets/img/work/economy.jpg" alt="Coins" />
-              <div class="subtitle">
-                <h3 class="">Economics</h3>
-              </div>
-            </div>
+          <div class="debate-theme">
+            <h3>Economic</h3>
+            <h5>Should the EU tax AI generated art to compensate artists?</h5>
           </div>
 
-          <div class="col" data-bs-toggle="modal">
-            <div class="card card-cover">
-              <img src="/assets/img/work/law.jpg" alt="World map" />
-              <div class="subtitle">
-                <h3 class="">Politics</h3>
-              </div>
-            </div>
+          <div class="debate-theme">
+            <h3>Political</h3>
+            <h5>Should India counter misinformation via gov't verified IDs on social media?</h5>
           </div>
-
-          <div class="col">
-            <div class="card card-cover">
-              <img src="/assets/img/work/technology.jpg" alt="Computer chip" />
-              <div class="subtitle">
-                <h3 class="">Military</h3>
-              </div>
-            </div>
+          
+          <div class="debate-theme">
+            <h3>Legal</h3>
+            <h5>Should NYC courts use AI to recommend bail amounts?</h5>
+          </div>
+          
+          <div class="debate-theme">
+            <h3>Healthcare</h3>
+            <h5>Should Ontario invest in AI diagnostics or training oncologists?</h5>
           </div>
 
         </div>
