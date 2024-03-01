@@ -35,14 +35,15 @@ section>.container-fluid {
 }
 
 .btn.btn-accent-custom {
-    color: #FFCE1A;
+    background-color: #FFCE1A;
+    color: black;
     border-color: #FFCE1A;
     transition: 0.3s
 }
 
 .btn.btn-accent-custom:hover, .btn.btn-accent-custom:focus {
-    background-color: #FFCE1A;
-    color: black;
+    color: #FFCE1A;
+    background-color: rgba(0,0,0,0);
 }
 
 /* ==== SECTIONS ==== */
